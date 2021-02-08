@@ -1,4 +1,4 @@
-// MIT license. Copyright (c) 2020 SwiftyFORM. All rights reserved.
+// MIT license. Copyright (c) 2021 SwiftyFORM. All rights reserved.
 import UIKit
 
 public protocol CustomizableTitleLabel {
@@ -7,7 +7,12 @@ public protocol CustomizableTitleLabel {
     var titleTextColor: UIColor { get set }
 }
 
-typealias CustomizableLabels = CustomizableTitleLabel & CustomizableDetailLabel
+typealias CustomizableLabel = CustomizableTitleLabel & CustomizableDetailLabel
+
+// It's inconsistent using plural for this, and singular everywhere else.
+// Will be marked `unavailable` in the future.
+@available(iOS, deprecated, renamed: "CustomizableLabel")
+typealias CustomizableLabels = CustomizableLabel
 
 public extension CustomizableTitleLabel where Self: FormItem {
     

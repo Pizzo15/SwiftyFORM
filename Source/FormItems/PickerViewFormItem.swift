@@ -1,4 +1,4 @@
-// MIT license. Copyright (c) 2020 SwiftyFORM. All rights reserved.
+// MIT license. Copyright (c) 2021 SwiftyFORM. All rights reserved.
 import UIKit
 
 /**
@@ -8,7 +8,7 @@ import UIKit
 
 Behind the scenes this creates a `UIPickerView`.
 */
-public class PickerViewFormItem: FormItem, CustomizableLabels {
+public class PickerViewFormItem: FormItem, CustomizableLabel {
 	override func accept(visitor: FormItemVisitor) {
 		visitor.visit(object: self)
 	}

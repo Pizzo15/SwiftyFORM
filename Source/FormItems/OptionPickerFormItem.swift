@@ -1,4 +1,4 @@
-// MIT license. Copyright (c) 2020 SwiftyFORM. All rights reserved.
+// MIT license. Copyright (c) 2021 SwiftyFORM. All rights reserved.
 import UIKit
 
 public class OptionRowModel: CustomStringConvertible {
@@ -15,7 +15,7 @@ public class OptionRowModel: CustomStringConvertible {
 	}
 }
 
-public class OptionPickerFormItem: FormItem, CustomizableLabels {
+public class OptionPickerFormItem: FormItem, CustomizableLabel {
 	override func accept(visitor: FormItemVisitor) {
 		visitor.visit(object: self)
 	}

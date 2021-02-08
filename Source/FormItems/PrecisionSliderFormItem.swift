@@ -1,4 +1,4 @@
-// MIT license. Copyright (c) 2020 SwiftyFORM. All rights reserved.
+// MIT license. Copyright (c) 2021 SwiftyFORM. All rights reserved.
 import UIKit
 
 /**
@@ -15,7 +15,7 @@ import UIKit
 Behind the scenes this creates a `PrecisionSlider`. This is not a standard Apple control.
 Please contact Simon Strandgaard if you have questions regarding it.
 */
-public class PrecisionSliderFormItem: FormItem, CustomizableLabels {
+public class PrecisionSliderFormItem: FormItem, CustomizableLabel {
     
 	override func accept(visitor: FormItemVisitor) {
 		visitor.visit(object: self)

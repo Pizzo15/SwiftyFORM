@@ -1,4 +1,4 @@
-// MIT license. Copyright (c) 2020 SwiftyFORM. All rights reserved.
+// MIT license. Copyright (c) 2021 SwiftyFORM. All rights reserved.
 import UIKit
 
 public struct ButtonCellModel {
@@ -6,7 +6,7 @@ public struct ButtonCellModel {
     var titleFont: UIFont = UIFont.preferredFont(forTextStyle: .body)
     var textAlignment: NSTextAlignment = .center
     var titleTextColor: UIColor = Colors.text
-    var backgroundColor: UIColor = Colors.background
+    var backgroundColor: UIColor? = nil
 
 	var action: () -> Void = {
 		SwiftyFormLog("action")

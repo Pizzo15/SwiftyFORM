@@ -1,4 +1,4 @@
-// MIT license. Copyright (c) 2020 SwiftyFORM. All rights reserved.
+// MIT license. Copyright (c) 2021 SwiftyFORM. All rights reserved.
 import UIKit
 
 public enum DatePickerFormItemMode {
@@ -22,7 +22,7 @@ public enum DatePickerFormItemMode {
 
 Behind the scenes this creates a `UIDatePicker`.
 */
-public class DatePickerFormItem: FormItem, CustomizableLabels {
+public class DatePickerFormItem: FormItem, CustomizableLabel {
 	override func accept(visitor: FormItemVisitor) {
 		visitor.visit(object: self)
 	}

@@ -1,7 +1,7 @@
-// MIT license. Copyright (c) 2020 SwiftyFORM. All rights reserved.
+// MIT license. Copyright (c) 2021 SwiftyFORM. All rights reserved.
 import UIKit
 
-public class ButtonFormItem: FormItem, CustomizableTitleLabel, CustomizableButtons {
+public class ButtonFormItem: FormItem, CustomizableTitleLabel, CustomizableButton {
     
 	override func accept(visitor: FormItemVisitor) {
 		visitor.visit(object: self)
@@ -15,7 +15,7 @@ public class ButtonFormItem: FormItem, CustomizableTitleLabel, CustomizableButto
 
     public var textAlignment: NSTextAlignment = .center
     
-    public var backgroundColor: UIColor = .clear 
+    public var backgroundColor: UIColor? = nil
 
 	public var action: () -> Void = {}
     

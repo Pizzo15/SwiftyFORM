@@ -1,4 +1,4 @@
-// MIT license. Copyright (c) 2020 SwiftyFORM. All rights reserved.
+// MIT license. Copyright (c) 2021 SwiftyFORM. All rights reserved.
 import UIKit
 import SwiftyFORM
 
@@ -58,6 +58,6 @@ class FirstViewController: FormViewController {
 		builder += ViewControllerFormItem().title("Sliders & TextFields").viewController(SlidersAndTextFieldsViewController.self)
 		builder += ViewControllerFormItem().title("Precision Sliders").viewController(PrecisionSlidersViewController.self)
 		builder += ViewControllerFormItem().title("Reload Form").viewController(ReloadingViewController.self)
-		builder += ViewControllerFormItem().title("Work In Progress").viewController(WorkInProgressViewController.self)
+		builder += ViewControllerFormItem().title("Lab Experiments").viewController(LabViewController.self)
 	}
 }
